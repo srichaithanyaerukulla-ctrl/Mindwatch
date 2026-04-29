@@ -1,0 +1,48 @@
+[debug] [2026-04-28T11:15:05.557Z] ----------------------------------------------------------------------
+[debug] [2026-04-28T11:15:05.560Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2026-04-28T11:15:05.560Z] CLI Version:   15.15.0
+[debug] [2026-04-28T11:15:05.560Z] Platform:      win32
+[debug] [2026-04-28T11:15:05.561Z] Node Version:  v22.21.0
+[debug] [2026-04-28T11:15:05.561Z] Time:          Tue Apr 28 2026 16:45:05 GMT+0530 (India Standard Time)
+[debug] [2026-04-28T11:15:05.561Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-28T11:15:09.375Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-28T11:15:09.375Z] > authorizing via signed-in user (srichaithanyaerukulla@gmail.com)
+[debug] [2026-04-28T11:15:09.376Z] [iam] checking project gen-lang-client-0822606148 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-04-28T11:15:09.377Z] Checked if tokens are valid: true, expires at: 1777378282045
+[debug] [2026-04-28T11:15:09.377Z] Checked if tokens are valid: true, expires at: 1777378282045
+[debug] [2026-04-28T11:15:09.378Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/gen-lang-client-0822606148:testIamPermissions [none]
+[debug] [2026-04-28T11:15:09.378Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/gen-lang-client-0822606148:testIamPermissions  x-goog-user-project=gen-lang-client-0822606148
+[debug] [2026-04-28T11:15:09.378Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gen-lang-client-0822606148:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-28T11:15:10.008Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/gen-lang-client-0822606148:testIamPermissions 403
+[debug] [2026-04-28T11:15:10.009Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gen-lang-client-0822606148:testIamPermissions {"error":{"code":403,"message":"Cloud Resource Manager API has not been used in project gen-lang-client-0822606148 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=gen-lang-client-0822606148 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.","status":"PERMISSION_DENIED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"SERVICE_DISABLED","domain":"googleapis.com","metadata":{"consumer":"projects/gen-lang-client-0822606148","activationUrl":"https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=gen-lang-client-0822606148","serviceTitle":"Cloud Resource Manager API","containerInfo":"gen-lang-client-0822606148","service":"cloudresourcemanager.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"Cloud Resource Manager API has not been used in project gen-lang-client-0822606148 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=gen-lang-client-0822606148 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry."},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Google developers console API activation","url":"https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=gen-lang-client-0822606148"}]}]}}
+[debug] [2026-04-28T11:15:10.013Z] [iam] error while checking permissions, command may fail: Request to https://cloudresourcemanager.googleapis.com/v1/projects/gen-lang-client-0822606148:testIamPermissions had HTTP Error: 403, Cloud Resource Manager API has not been used in project gen-lang-client-0822606148 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=gen-lang-client-0822606148 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[debug] [2026-04-28T11:15:10.016Z] Checked if tokens are valid: true, expires at: 1777378282045
+[debug] [2026-04-28T11:15:10.016Z] Checked if tokens are valid: true, expires at: 1777378282045
+[debug] [2026-04-28T11:15:10.017Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gen-lang-client-0822606148 [none]
+[debug] [2026-04-28T11:15:10.800Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gen-lang-client-0822606148 404
+[debug] [2026-04-28T11:15:10.800Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gen-lang-client-0822606148 {"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}}
+[debug] [2026-04-28T11:15:10.800Z] Couldn't get project info from firedata for gen-lang-client-0822606148, trying resource manager. Original error: FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/gen-lang-client-0822606148 had HTTP Error: 404, Requested entity was not found.
+[debug] [2026-04-28T11:15:10.801Z] Checked if tokens are valid: true, expires at: 1777378282045
+[debug] [2026-04-28T11:15:10.801Z] Checked if tokens are valid: true, expires at: 1777378282045
+[debug] [2026-04-28T11:15:10.801Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/gen-lang-client-0822606148/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2026-04-28T11:15:10.801Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/gen-lang-client-0822606148/services/cloudresourcemanager.googleapis.com  x-goog-user-project=gen-lang-client-0822606148
+[debug] [2026-04-28T11:15:12.538Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/gen-lang-client-0822606148/services/cloudresourcemanager.googleapis.com 403
+[debug] [2026-04-28T11:15:12.538Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/gen-lang-client-0822606148/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2026-04-28T11:15:12.538Z] Unable to check that https://cloudresourcemanager.googleapis.com is enabled on gen-lang-client-0822606148. Calls to it will fail if it is not enabled
+[debug] [2026-04-28T11:15:12.538Z] Checked if tokens are valid: true, expires at: 1777378282045
+[debug] [2026-04-28T11:15:12.538Z] Checked if tokens are valid: true, expires at: 1777378282045
+[debug] [2026-04-28T11:15:12.538Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/gen-lang-client-0822606148 [none]
+[debug] [2026-04-28T11:15:12.863Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/gen-lang-client-0822606148 200
+[debug] [2026-04-28T11:15:12.863Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/gen-lang-client-0822606148 {"projectNumber":"860576386030","projectId":"gen-lang-client-0822606148","lifecycleState":"ACTIVE","name":"Default Gemini Project","createTime":"2025-12-13T11:02:28.300947Z"}
+[debug] [2026-04-28T11:15:12.864Z] the default site does not exist on the Firebase project; asking Hosting.
+[debug] [2026-04-28T11:15:12.864Z] Checked if tokens are valid: true, expires at: 1777378282045
+[debug] [2026-04-28T11:15:12.864Z] Checked if tokens are valid: true, expires at: 1777378282045
+[debug] [2026-04-28T11:15:12.865Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/gen-lang-client-0822606148/sites pageToken=&pageSize=10
+[debug] [2026-04-28T11:15:14.204Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/gen-lang-client-0822606148/sites 200
+[debug] [2026-04-28T11:15:14.205Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/gen-lang-client-0822606148/sites {}
+[info] i  No Hosting site detected. 
+[debug] [2026-04-28T11:15:14.209Z] Checked if tokens are valid: true, expires at: 1777378282045
+[debug] [2026-04-28T11:15:14.209Z] Checked if tokens are valid: true, expires at: 1777378282045
+[debug] [2026-04-28T11:15:14.210Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/gen-lang-client-0822606148/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2026-04-28T11:15:14.210Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/gen-lang-client-0822606148/services/cloudresourcemanager.googleapis.com  x-goog-user-project=gen-lang-client-0822606148
